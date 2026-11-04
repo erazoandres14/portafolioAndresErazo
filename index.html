@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora el universo Fortnite: Battle Royale, modos de juego y creación de islas.">
+  <title>DROP IN — Fortnite Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{background:#101a2b;color:#fff;font-family:'Manrope',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}::selection{background:#ffe34d;color:#17233a}.scroll-progress{height:4px;position:fixed;z-index:1000;top:0;left:0;width:0;background:#ffe34d}
+.topbar{height:78px;position:absolute;top:0;left:0;width:100%;z-index:20;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff20}.brand{font:900 1.7rem 'Barlow Condensed',sans-serif;letter-spacing:1px;line-height:.8}.brand span{color:#ffe34d}.brand small{display:block;font:500 .48rem 'DM Mono',monospace;letter-spacing:2px;margin-top:8px;color:#c7d1e0}.topbar nav{display:flex;align-items:center;gap:35px}.topbar nav a{font:700 .68rem 'DM Mono',monospace;letter-spacing:1px;color:#e5eaf2;transition:.2s}.topbar nav a:hover{color:#ffe34d}.topbar nav .nav-play{background:#ffe34d;color:#17233a;padding:13px 18px;clip-path:polygon(7% 0,100% 0,93% 100%,0 100%)}.menu-btn{display:none;background:none;border:0;color:white;font-size:1.5rem}
+.hero{height:100vh;min-height:760px;max-height:1050px;position:relative;overflow:hidden;background:linear-gradient(180deg,#132c54 0%,#3678a0 42%,#e89b68 77%,#263c4c 100%);isolation:isolate}.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 33%,#ffe3a8 0,transparent 22%),linear-gradient(110deg,#12284a99,transparent 65%)}.sun{position:absolute;width:260px;height:260px;border-radius:50%;right:16%;top:17%;background:radial-gradient(circle,#fff2c5 0,#ffca82 45%,#ffb56822 70%,transparent 72%);filter:blur(1px);box-shadow:0 0 100px #ffce8a88}.mountain{position:absolute;left:-5%;width:110%;bottom:8%;clip-path:polygon(0 100%,0 68%,12% 40%,19% 61%,30% 22%,41% 63%,54% 18%,66% 60%,79% 30%,91% 62%,100% 42%,100% 100%)}.mountain-back{height:54%;background:linear-gradient(140deg,#587d8d,#243d57 70%);opacity:.75}.mountain-front{height:43%;bottom:4%;background:linear-gradient(120deg,#263e50,#122b3d 75%);clip-path:polygon(0 100%,0 54%,14% 72%,25% 31%,38% 72%,52% 20%,66% 68%,79% 35%,91% 72%,100% 48%,100% 100%)}.island-ground{position:absolute;bottom:-12%;left:-5%;width:110%;height:36%;background:linear-gradient(180deg,#52684d,#1d343a 75%);clip-path:polygon(0 30%,15% 10%,32% 26%,48% 0,68% 20%,84% 4%,100% 26%,100% 100%,0 100%)}.hero-noise{position:absolute;inset:0;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");pointer-events:none}.hero-copy{position:absolute;z-index:5;left:10%;top:22%;max-width:620px}.season-label,.eyebrow,.pre-title,.top-note,.mode-index,.mode-content>a,.hero-bottom,.map-coords,.compass,.creative-stamp,footer>span,footer>a:last-child{font-family:'DM Mono',monospace;letter-spacing:1.5px}.season-label{font-size:.62rem;color:#e9f2f8;display:flex;align-items:center;gap:10px}.live-dot{width:7px;height:7px;border-radius:50%;background:#ffe34d;box-shadow:0 0 12px #ffe34d}.pre-title{font-size:.7rem;color:#ffe34d;font-weight:500;margin-top:42px}.hero h1,.creative h2,.final-cta h2{font:900 clamp(4.7rem,9vw,9rem)/.82 'Barlow Condensed',sans-serif;letter-spacing:-2px;margin:15px 0 24px;text-shadow:0 7px 0 #162b42aa,0 14px 30px #10233b66}.hero h1 em,.creative h2 em{font-style:normal;color:#ffe34d}.hero-text{max-width:440px;font-size:.88rem;line-height:1.8;color:#e1eaf0;text-shadow:0 2px 8px #14283c}.hero-buttons{display:flex;gap:13px;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:25px;padding:16px 22px;font:800 .7rem 'DM Mono',monospace;letter-spacing:1px;transition:.25s;clip-path:polygon(5% 0,100% 0,95% 100%,0 100%)}.btn:hover{transform:translateY(-5px) scale(1.02)}.btn-yellow{background:#ffe34d;color:#17233a;box-shadow:0 8px 25px #ffe34d44}.btn-yellow span{font-size:1rem}.btn-outline{border:1px solid #ffffff88;color:white;background:#12263b66;backdrop-filter:blur(8px)}.drop-card{position:absolute;right:10%;top:34%;z-index:5;width:165px;height:185px;background:#14273bbf;border:1px solid #ffffff55;backdrop-filter:blur(12px);clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;box-shadow:0 20px 60px #0b1b2b55}.drop-icon{font-size:2rem;color:#ffe34d}.drop-card span{font: .55rem 'DM Mono';letter-spacing:1px;color:#c9d7e4;margin-top:7px}.drop-card strong{font:900 3.4rem 'Barlow Condensed';line-height:1.1}.drop-card small{font: .5rem 'DM Mono';color:#b5c5d3}.hero-bottom{position:absolute;bottom:25px;left:7%;right:7%;display:flex;justify-content:space-between;font-size:.52rem;color:#d5e1e8}.hero-bottom b{color:#ffe34d;font-size:1rem;margin-left:8px}
+.ticker{background:#ffe34d;color:#1b2b40;overflow:hidden;padding:13px 0;transform:rotate(-1deg) scale(1.02);position:relative;z-index:7}.ticker-track{display:flex;justify-content:space-around;align-items:center;gap:35px;white-space:nowrap;min-width:1100px;animation:marquee 24s linear infinite;font:900 1.2rem 'Barlow Condensed';letter-spacing:2px}.ticker i{font-style:normal;font-size:.8rem}
+.section{padding:125px 10%}.modes{background:#111d30}.section-top{display:flex;justify-content:space-between;align-items:center}.eyebrow{font-size:.63rem;color:#ffe34d}.top-note{font-size:.55rem;color:#8194a9}.heading-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin:35px 0 55px}.heading-row h2,.island-copy h2{font:900 clamp(3.5rem,6vw,6rem)/.88 'Barlow Condensed';letter-spacing:-1px}.heading-row h2 span,.island-copy h2 span{color:#ffe34d}.heading-row p{max-width:330px;color:#9eafc1;font-size:.85rem;line-height:1.8;margin-bottom:6px}
+.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.mode-card{height:440px;position:relative;overflow:hidden;background:#263c53;clip-path:polygon(0 0,100% 0,100% 94%,94% 100%,0 100%);transition:transform .35s}.mode-card:hover{transform:translateY(-10px)}.mode-bg{position:absolute;inset:0;transition:transform .6s}.mode-card:hover .mode-bg{transform:scale(1.08)}.battle .mode-bg{background:linear-gradient(180deg,#f5a54a22,#10233b),radial-gradient(circle at 65% 25%,#ffdc85 0 8%,transparent 9%),linear-gradient(135deg,#4c7790,#233f57 50%,#142638)}.reload .mode-bg{background:linear-gradient(180deg,#c6a3ff11,#111d30),radial-gradient(circle at 35% 25%,#e5c4ff 0 7%,transparent 8%),linear-gradient(135deg,#71578e,#354a68 55%,#17253b)}.lego .mode-bg{background:linear-gradient(180deg,#8ce0d522,#132d3b),radial-gradient(circle at 70% 24%,#f8e2a0 0 8%,transparent 9%),linear-gradient(135deg,#58a48d,#34728a 50%,#1c3c50)}.mode-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0b1628 0%,#0b1628bb 40%,transparent 100%)}.mode-index{position:absolute;top:23px;left:23px;z-index:2;color:#e2eaf2;font-size:.55rem}.mode-content{position:absolute;z-index:3;bottom:28px;left:25px;right:25px}.mode-icon{font-size:1.5rem;color:#ffe34d}.mode-content h3{font:900 3.1rem/.88 'Barlow Condensed';margin:10px 0}.mode-content p{font-size:.74rem;line-height:1.7;color:#b6c3d0;min-height:50px}.mode-content>a{display:inline-block;color:#ffe34d;font-size:.55rem;margin-top:20px;border-bottom:1px solid #ffe34d;padding-bottom:7px}
+.island{background:#e6e7dc;color:#182b3d;display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.island-visual{height:490px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 45% 40%,#c8d4ae,#9cae8a 60%,#718d7a);box-shadow:20px 25px 0 #c5c8ba}.map-grid{position:absolute;inset:0;background-image:linear-gradient(#203f4020 1px,transparent 1px),linear-gradient(90deg,#203f4020 1px,transparent 1px);background-size:35px 35px;transform:rotate(-12deg) scale(1.4)}.map-contour{position:absolute;border:2px solid #54786b55;border-radius:43% 57% 66% 34%;transform:rotate(28deg)}.contour-one{width:390px;height:280px;top:80px;left:50px}.contour-two{width:280px;height:200px;top:120px;left:100px;border-style:dashed}.map-pin{position:absolute;display:flex;align-items:center;gap:7px;font: .55rem 'DM Mono';color:#213b48}.map-pin span{width:12px;height:12px;border-radius:50%;background:#ffdf43;border:3px solid #fff;box-shadow:0 0 0 4px #1c455455}.pin-a{top:28%;left:28%}.pin-b{top:55%;left:58%}.pin-c{top:72%;left:22%}.map-coords{position:absolute;bottom:18px;left:20px;font-size:.53rem;line-height:1.8;color:#304c4a}.compass{position:absolute;right:20px;top:18px;text-align:center;font-size:.6rem;color:#294d4c}.compass span{font-size:1.5rem}.island-copy .eyebrow{color:#607c6d}.island-copy h2{margin:25px 0;color:#1a3446}.island-copy p{color:#5b6e70;line-height:1.9;font-size:.85rem;max-width:440px}.island-facts{display:flex;gap:38px;margin-top:45px;border-top:1px solid #aab8a9;padding-top:22px}.island-facts div{display:flex;flex-direction:column;gap:5px}.island-facts strong{font:900 2rem 'Barlow Condensed';color:#1b5261}.island-facts span{font: .55rem 'DM Mono';letter-spacing:1px;color:#6c7f77}
+.creative{min-height:680px;position:relative;overflow:hidden;background:linear-gradient(90deg,#14243c 0%,#182e4a 50%,#243c54 100%);display:flex;align-items:center}.creative-bg{position:absolute;right:-5%;top:-10%;width:65%;height:120%;background:radial-gradient(ellipse at 55% 48%,#ffe34d33,transparent 42%),linear-gradient(135deg,transparent 30%,#4f83a344 31%,transparent 32%),linear-gradient(45deg,transparent 48%,#7da7bd22 49%,transparent 50%);transform:skewX(-15deg)}.creative-content{position:relative;z-index:2;max-width:540px}.creative h2{font-size:clamp(5rem,9vw,8.5rem);margin:30px 0}.creative-content>p{max-width:440px;color:#b3c2d1;line-height:1.9;font-size:.85rem;margin-bottom:30px}.creative-stamp{position:absolute;right:13%;top:25%;width:230px;height:230px;border:2px solid #ffe34d88;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:1.5rem;line-height:1.1;color:#fff;transform:rotate(13deg);text-shadow:0 4px 15px #0005}.creative-stamp b{color:#ffe34d;font-size:2.3rem}.creative-stamp span{position:absolute;right:8px;top:18px;color:#ffe34d;font-size:2rem}
+.final-cta{background:#f0b64c;color:#182c42;position:relative;text-align:center;overflow:hidden;padding-top:120px;padding-bottom:120px}.cta-lines{position:absolute;inset:0;opacity:.16;background:repeating-linear-gradient(135deg,transparent 0 35px,#fff 36px 38px)}.cta-content{position:relative}.final-cta .eyebrow{color:#45586a}.final-cta h2{font-size:clamp(4.5rem,9vw,8.5rem);text-shadow:0 6px 0 #d79635;margin:30px 0}.final-cta h2 span{color:#fff}.final-cta .btn{background:#172b42;color:#ffe34d;box-shadow:0 12px 25px #79521d33}.final-cta p{font-size:.58rem;color:#5f5e52;max-width:600px;line-height:1.7;margin:40px auto 0}
+footer{background:#101a2b;padding:27px 8%;display:flex;align-items:center;justify-content:space-between}footer>span,footer>a:last-child{font-size:.52rem;color:#8392a4}.footer-brand{font-size:1.2rem}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes marquee{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:no-preference){.sun{animation:sunPulse 7s ease-in-out infinite alternate}.drop-card{animation:float 5s ease-in-out infinite}}@keyframes float{50%{transform:translateY(-15px) rotate(2deg)}}@keyframes sunPulse{to{box-shadow:0 0 130px #ffce8aaa;transform:scale(1.05)}}
+@media(max-width:900px){.hero-copy{left:7%;top:22%}.drop-card{right:7%;top:55%;transform:scale(.85)}.section{padding:100px 7%}.mode-grid{gap:12px}.mode-card{height:400px}.mode-content{left:18px;right:18px}.mode-content h3{font-size:2.5rem}.island{gap:5%}.island-visual{height:400px}.creative-stamp{right:7%;width:180px;height:180px}}
+@media(max-width:650px){.topbar{height:68px;padding:0 6%}.menu-btn{display:block}.topbar nav{display:none;position:absolute;top:68px;left:0;right:0;padding:24px 7%;background:#14243b;flex-direction:column;align-items:flex-start;gap:22px}.topbar nav.open{display:flex}.hero{min-height:850px;height:100svh}.hero-copy{left:7%;right:7%;top:19%}.hero h1{font-size:clamp(4.2rem,17vw,6.5rem)}.pre-title{margin-top:30px}.hero-text{max-width:360px;font-size:.8rem}.hero-buttons{flex-wrap:wrap}.btn{padding:14px 16px;font-size:.59rem;gap:14px}.drop-card{top:auto;bottom:13%;right:8%;width:125px;height:140px}.drop-card strong{font-size:2.6rem}.drop-card span,.drop-card small{font-size:.43rem}.sun{width:180px;height:180px;right:8%;top:22%}.hero-bottom{left:6%;right:6%;font-size:.43rem}.hero-bottom span:nth-child(2){display:none}.ticker-track{font-size:1rem}.section{padding:85px 7%}.section-top{align-items:flex-start;gap:20px}.top-note{max-width:120px;text-align:right;line-height:1.5}.heading-row{display:block;margin:30px 0}.heading-row h2,.island-copy h2{font-size:4rem}.heading-row p{margin-top:20px}.mode-grid{grid-template-columns:1fr}.mode-card{height:370px}.mode-content h3{font-size:3rem}.island{grid-template-columns:1fr;gap:55px}.island-visual{height:340px;box-shadow:10px 12px 0 #c5c8ba}.contour-one{left:0;width:320px}.contour-two{left:35px;width:250px}.island-facts{gap:25px}.creative{min-height:720px;align-items:flex-start}.creative-content{padding-top:10px}.creative h2{font-size:6rem}.creative-stamp{top:auto;bottom:55px;right:9%;width:145px;height:145px;font-size:1rem}.creative-stamp b{font-size:1.6rem}.final-cta{padding:90px 7%}.final-cta h2{font-size:5rem}footer{padding:25px 7%;gap:18px;flex-wrap:wrap}footer>span{order:3;width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="progress"></div>
+  <header class="topbar">
+    <a href="#home" class="brand">DROP<span>IN</span><small>FORTNITE UNIVERSE</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="nav">
+      <a href="#modes">MODOS</a><a href="#island">LA ISLA</a><a href="#creative">CREATIVO</a>
+      <a class="nav-play" href="https://www.fortnite.com/" target="_blank" rel="noreferrer">JUGAR AHORA ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-sky"></div><div class="sun"></div>
+      <div class="mountain mountain-back" data-parallax="0.12"></div>
+      <div class="mountain mountain-front" data-parallax="0.22"></div>
+      <div class="island-ground" data-parallax="0.3"></div>
+      <div class="hero-noise"></div>
+      <div class="hero-copy reveal">
+        <div class="season-label"><span class="live-dot"></span> TU PRÓXIMA PARTIDA COMIENZA AQUÍ</div>
+        <p class="pre-title">SALTA DEL BUS DE BATALLA</p>
+        <h1>¿LISTO PARA<br><em>LA VICTORIA?</em></h1>
+        <p class="hero-text">Aterriza, equípate y encuentra tu propia forma de jugar. La isla está llena de posibilidades. ¿Cuál será tu próxima aventura?</p>
+        <div class="hero-buttons">
+          <a class="btn btn-yellow" href="#modes">EXPLORAR MODOS <span>↘</span></a>
+          <a class="btn btn-outline" href="https://www.fortnite.com/" target="_blank" rel="noreferrer">ENTRAR A FORTNITE ↗</a>
+        </div>
+      </div>
+      <div class="drop-card" data-parallax="-0.12">
+        <div class="drop-icon">↓</div><span>BATALLA CAMPAL</span><strong>100</strong><small>JUGADORES · 1 VICTORIA</small>
+      </div>
+      <div class="hero-bottom"><span>ISLA DETECTADA // 001</span><span>DESPLÁZATE PARA DESCUBRIR <b>↓</b></span><span>LATITUD 00° / LONGITUD 00°</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Fortnite"><div class="ticker-track">
+      <span>LOOT</span><i>✦</i><span>BUILD</span><i>✦</i><span>FIGHT</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>VICTORY ROYALE</span><i>✦</i>
+      <span>LOOT</span><i>✦</i><span>BUILD</span><i>✦</i><span>FIGHT</span><i>✦</i><span>EXPLORE</span><i>✦</i><span>VICTORY ROYALE</span><i>✦</i>
+    </div></section>
+
+    <section class="modes section" id="modes">
+      <div class="section-top reveal"><span class="eyebrow">01 / ELIGE TU EXPERIENCIA</span><span class="top-note">NO HAY UNA SOLA FORMA DE JUGAR</span></div>
+      <div class="heading-row reveal"><h2>CADA PARTIDA<br>ES <span>DIFERENTE.</span></h2><p>Entra con tu escuadrón, juega a tu ritmo o descubre experiencias creadas por la comunidad.</p></div>
+      <div class="mode-grid">
+        <article class="mode-card battle reveal">
+          <div class="mode-bg"></div><span class="mode-index">01 / COMPETITIVO</span><div class="mode-content"><span class="mode-icon">⚡</span><h3>BATALLA<br>CAMPAL</h3><p>Sobrevive, consigue recursos y lucha por ser el último en pie.</p><a href="https://www.fortnite.com/" target="_blank" rel="noreferrer">DESCUBRIR MODO ↗</a></div>
+        </article>
+        <article class="mode-card reload reveal">
+          <div class="mode-bg"></div><span class="mode-index">02 / ACCIÓN RÁPIDA</span><div class="mode-content"><span class="mode-icon">⟳</span><h3>RECARGA</h3><p>Vuelve a la acción, reúne al equipo y pelea hasta el final.</p><a href="https://www.fortnite.com/" target="_blank" rel="noreferrer">DESCUBRIR MODO ↗</a></div>
+        </article>
+        <article class="mode-card lego reveal">
+          <div class="mode-bg"></div><span class="mode-index">03 / EXPLORACIÓN</span><div class="mode-content"><span class="mode-icon">◇</span><h3>LEGO<br>FORTNITE</h3><p>Explora, construye y crea tu propio mundo con amigos.</p><a href="https://www.fortnite.com/" target="_blank" rel="noreferrer">DESCUBRIR MODO ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="island section" id="island">
+      <div class="island-visual reveal">
+        <div class="map-grid"></div><div class="map-contour contour-one"></div><div class="map-contour contour-two"></div>
+        <div class="map-pin pin-a"><span></span><b>DROP ZONE</b></div><div class="map-pin pin-b"><span></span><b>THE HIDDEN</b></div><div class="map-pin pin-c"><span></span><b>SAFE AREA</b></div>
+        <div class="map-coords">MAP // SECTOR 04<br>ISLAND SCAN: COMPLETE</div>
+        <div class="compass">N<br><span>✦</span></div>
+      </div>
+      <div class="island-copy reveal"><span class="eyebrow">02 / EXPLORA LA ISLA</span><h2>UN MUNDO.<br><span>MIL HISTORIAS.</span></h2><p>Cada rincón puede convertirse en el comienzo de una nueva aventura. Explora lugares, encuentra tu equipamiento y crea estrategias con tu squad.</p><div class="island-facts"><div><strong>01</strong><span>ATERRIZA</span></div><div><strong>02</strong><span>EXPLORA</span></div><div><strong>03</strong><span>CONQUISTA</span></div></div></div>
+    </section>
+
+    <section class="creative section" id="creative">
+      <div class="creative-bg" data-parallax="0.1"></div>
+      <div class="creative-content reveal"><span class="eyebrow">03 / TU IMAGINACIÓN, TUS REGLAS</span><h2>NO SOLO<br>JUEGUES.<br><em>CREA.</em></h2><p>Diseña islas, inventa desafíos y construye experiencias para que otros jugadores las descubran. Tu próxima gran idea puede convertirse en un nuevo lugar favorito de la comunidad.</p><a class="btn btn-yellow" href="https://www.fortnite.com/developer/tools" target="_blank" rel="noreferrer">DESCUBRIR HERRAMIENTAS <span>↗</span></a></div>
+      <div class="creative-stamp">CREATE<br><b>YOUR</b><br>WORLD<span>✳</span></div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="cta-lines"></div><div class="cta-content reveal"><span class="eyebrow">EL BUS ESTÁ POR SALIR</span><h2>¿NOS VEMOS<br>EN LA <span>ISLA?</span></h2><a class="btn btn-yellow" href="https://www.fortnite.com/" target="_blank" rel="noreferrer">JUGAR FORTNITE <span>↗</span></a><p>Fortnite es una experiencia de Epic Games. Esta es una landing page conceptual hecha por fans y no está afiliada ni patrocinada por Epic Games.</p></div>
+    </section>
+  </main>
+  <footer><a href="#home" class="brand">DROP<span>IN</span></a><span>FAN-MADE LANDING PAGE · 2026</span><a href="#home">VOLVER ARRIBA ↑</a></footer>
+  <script>
+const progress = document.getElementById("progress");
+const nav = document.getElementById("nav");
+document.getElementById("menuBtn").addEventListener("click", () => nav.classList.toggle("open"));
+nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+let busy = false;
+function onScroll() {
+  const max = document.documentElement.scrollHeight - innerHeight;
+  progress.style.width = `${max > 0 ? scrollY / max * 100 : 0}%`;
+  document.querySelectorAll("[data-parallax]").forEach(el => {
+    const speed = Number(el.dataset.parallax);
+    el.style.translate = `0 ${scrollY * speed}px`;
+  });
+  busy = false;
+}
+addEventListener("scroll", () => {
+  if (!busy) { requestAnimationFrame(onScroll); busy = true; }
+}, { passive: true });
+onScroll();
+
+  </script>
+</body>
+</html>
